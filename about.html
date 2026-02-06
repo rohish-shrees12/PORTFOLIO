@@ -1,0 +1,76 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-page">
+  <div style="padding: 2rem 5%; max-width: 1400px; margin: 0 auto;">
+    <a href="../index.html" style="display: inline-flex; align-items: center; gap: 0.7rem; color: #ffffff; text-decoration: none; font-weight: 600; transition: all 0.3s ease; margin-top: 1rem; background: linear-gradient(90deg, #a855f7, #c084fc); padding: 0.7rem 1.5rem; border-radius: 50px; box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(168, 85, 247, 0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(168, 85, 247, 0.3)';">← Rohish.</a>
+  </div>
+
+  <main class="about-shell">
+    <section class="about-hero reveal">
+      <div class="glass-card">
+        <div class="about-header">
+          <h1>
+            About <span class="gradient-text">Me</span>
+          </h1>
+          <p class="tagline">Hey, I'm Rohish Shrees — turning anime into stories and code into clean experiences.</p>
+        </div>
+
+        <div class="about-content">
+          <div class="intro">
+            <p class="greeting">I'm a <span class="highlight">Grade 11</span> student at</p>
+            <h2 class="college">Xavier International College</h2>
+            
+            <p class="bio">
+              Passionate about <strong>cinematic AMV editing</strong> and building modern, responsive web pages with HTML & CSS.  
+              I love blending creativity with code — whether it's syncing cuts to a beat or crafting pixel-perfect designs.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span class="skill-icon">🎬</span>
+              <h3>AMV Editing</h3>
+              <p>Cinematic cuts, effects, color grading, storytelling through anime</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">💻</span>
+              <h3>Web Development</h3>
+              <p>HTML, CSS, responsive design, glassmorphism UI, clean layouts</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">⚡</span>
+              <h3>Currently Learning</h3>
+              <p>JavaScript basics • Better animations • Video compositing tricks</p>
+            </div>
+          </div>
+
+          <p class="fun-fact">
+            Fun fact: My first AMV took 3 weeks of trial and error — now I can finish a solid edit in a weekend!
+          </p>
+
+          <div style="margin-top: 3rem; padding-top: 3rem; border-top: 1px solid rgba(120, 120, 255, 0.2);">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #d0d0ff;">My Story</h2>
+            <p style="font-size: 1.1rem; color: #b0b0d0; line-height: 1.8; margin-bottom: 1.5rem;">
+              I'm Rohish Shrees, a 17-year-old student passionate about creating visual stories. My journey started with anime, but it quickly expanded into web design and creative development. What began as a hobby editing anime videos turned into a genuine passion for visual storytelling.
+            </p>
+            <p style="font-size: 1.1rem; color: #b0b0d0; line-height: 1.8; margin-bottom: 1.5rem;">
+              Whether it's crafting cinematic AMV edits or building clean, modern websites, I believe in combining aesthetics with functionality. Every project I work on is an opportunity to level up and push creative boundaries. I'm dedicated to both editing and coding, constantly learning new techniques and exploring innovative ways to bring ideas to life.
+            </p>
+            <p style="font-size: 1.1rem; color: #b0b0d0; line-height: 1.8;">
+              I'm always learning, experimenting, and looking for exciting collaborations. Let's create something amazing together!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="about-footer">
+      <span>© <span id="year"></span> Rohish Shrees • Made with passion & late-night edits</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
