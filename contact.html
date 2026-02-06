@@ -297,7 +297,13 @@
       <div class="contact-card contact-form-card glass-card reveal" style="animation-delay: 0.2s;">
         <h2 class="contact-card-title">Send Message</h2>
 
-        <form class="contact-form" action="#" method="post">
+        <form
+  class="contact-form"
+  action="https://formspree.io/f/abcdwxyz"
+  method="POST"
+>
+
+
           <div class="field">
             <input id="name" type="text" name="name" placeholder=" " required>
             <label for="name">Your Name <span class="req">*</span></label>
@@ -326,12 +332,29 @@
       </div>
     </section>
   </main>
+  <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+<script>
+(function(){
+  emailjs.init("LJL9PT8gFY5GoTJFn");
+})();
+
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  emailjs.send("service_a8vx1zm", "
+__ejs-test-mail-service__", {
+    name: name.value,
+    email: email.value,
+    subject: subject.value,
+    message: message.value
+  }).then(() => {
+    alert("Message sent!");
+    this.reset();
+  });
+});
+</script>
 
   <!-- Optional: tiny script for year or future features -->
-  <script>
-    
-
-    // You can add form success message later if you connect backend
-  </script>
+ 
 </body>
 </html>
