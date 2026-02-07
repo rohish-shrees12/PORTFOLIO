@@ -161,16 +161,19 @@
 }
 
 /* Reveal animation */
+./* Hidden state */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
   transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.reveal {
+/* Visible state */
+.reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -181,3 +184,4 @@
     font-size: clamp(2.8rem, 12vw, 4.5rem);
   }
 }
+
